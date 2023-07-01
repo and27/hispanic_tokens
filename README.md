@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hispanic Tokens
 
-## Getting Started
+Hispanic Tokens is a project aimed at fostering a culture of appreciation and recognition within a group setting, particularly after giving presentations. This project utilizes the Next13 platform to create and distribute unique digital tokens, allowing individuals to express their gratitude and acknowledge the efforts of their peers. By incorporating the concept of Hispanic Tokens, we hope to enhance collaboration, inspire confidence, and create a supportive environment within the group.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Hispanic Tokens provides a user-friendly solution to express appreciation after someone delivers a presentation. Inspired by the idea of recognizing the value and effort put into presentations, this project utilizes Next13, a powerful development framework, to create a seamless experience for creating, sharing, and receiving digital tokens.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The purpose of these tokens is to show gratitude, inspire motivation, and build a positive group dynamic. Hispanic Tokens provides an easy way for individuals within a group to acknowledge and appreciate their peers' hard work, encouraging a culture of recognition and support.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Token Creation**: Generate unique digital tokens to express appreciation for a presentation.
+- **Personalization**: Customize the tokens with personalized messages or graphics.
+- **Shareability**: Easily share the tokens with the presenter through various channels.
+- **Tracking and Statistics**: Keep track of the tokens received and analyze appreciation trends within the group.
+- **Integration with Next13**: Benefit from the powerful features and flexibility of the Next13 development framework.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To install and run Hispanic Tokens locally, please follow these steps:
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/your-username/hispanic-tokens.git
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```
+
+2. npm install
+
+3. npm run dev
