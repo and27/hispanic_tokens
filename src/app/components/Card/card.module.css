@@ -1,7 +1,15 @@
 .card {
   height: 70vh;
-  width: 30%;
+  width: 90%;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 60%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 30%;
+  }
 }
 
 .card:hover .front {
@@ -82,7 +90,7 @@ p.subheading {
   border-radius: var(--border-radius);
   box-shadow: 0px 0px 12px #25408f9d;
 
-  padding: 24px;
+  padding: 16px;
   background: linear-gradient(
     180deg,
     var(--background-start),
@@ -98,14 +106,18 @@ p.subheading {
   height: 100%;
   backface-visibility: hidden;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
+
+  @media screen and (min-width: 768px) {
+    padding: 24px;
+  }
 }
 
 .back {
   transform: rotateY(180deg) perspective(600px);
   border-radius: var(--border-radius);
   box-shadow: 0px 0px 12px #25408f9d;
-  padding: 24px;
+  padding: 16px;
   background: linear-gradient(
     180deg,
     var(--background-start),
@@ -121,7 +133,11 @@ p.subheading {
   height: 100%;
   backface-visibility: hidden;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
+
+  @media screen and (min-width: 768px) {
+    padding: 24px;
+  }
 }
 
 .backgroundImage {

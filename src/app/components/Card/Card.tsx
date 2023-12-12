@@ -41,7 +41,14 @@ const Card = () => (
           alt=""
           style={{ borderRadius: "150px" }}
         />
-        <p className={styles.description}>hispanicgroup.com</p>
+        <a
+          href="https://hispanicgroup.com"
+          target="_blank"
+          className={styles.description}
+          style={{ color: "white" }}
+        >
+          hispanicgroup.com
+        </a>
       </div>
     </a>
   </>
