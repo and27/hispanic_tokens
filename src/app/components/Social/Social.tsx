@@ -3,9 +3,9 @@ import styles from "./social.module.css";
 
 const Social = () => (
   <div className={styles.social}>
-    <BiLogoInstagramAlt size={35} color={"white"} />
-    <BiLogoFacebook size={35} color={"white"} />
-    <BiDownload size={35} color={"white"} />
+    <BiLogoInstagramAlt size={40} color={"#6041c4"} />
+    <BiLogoFacebook size={40} color={"#6041c4"} />
+    <BiDownload size={40} color={"#6041c4"} />
   </div>
 );
 

@@ -1,6 +1,5 @@
 .main {
-  background-color: #333;
-  padding-block: 60px;
+  background-image: url("/backgroundLight.svg");
 }
 
 .container_inner {
@@ -12,7 +11,3 @@
   align-items: center;
   height: 100%;
 }
-
-
-
-
