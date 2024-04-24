@@ -54,6 +54,10 @@
   margin-bottom: 24px !important;
 }
 
+.description {
+  margin-bottom: 24px !important;
+}
+
 .badge {
   width: 400px;
   font-family: var(--font-lato);

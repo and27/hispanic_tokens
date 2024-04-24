@@ -1,5 +1,5 @@
 import Image from "next/image";
-import gif from "../../../../public/congrats.gif";
+import gif from "../../../../public/congratsPeople.gif";
 import styles from "./card.module.css";
 import Link from "next/link";
 
@@ -32,10 +32,10 @@ const Card = async ({ name, task, date, totalTasks }: ICardProps) => {
           <p className={styles.subheading}>Felicitaciones</p>
           <h2>{name}</h2>
           <p className={styles.descriptionLarge}>{task}</p>
-          <p>{date}</p>
           <p className={styles.description}>
-            LLevas {totalTasks} tareas completadas
+            LLevas {totalTasks} tareas completadas.
           </p>
+          <p>Sigue superándote y desafiándote día a día.</p>
         </div>
 
         <div className={styles.back}>
@@ -48,6 +48,8 @@ const Card = async ({ name, task, date, totalTasks }: ICardProps) => {
             alt=""
             style={{ borderRadius: "150px" }}
           />
+          <p className={styles.date}>{new Date(date).toDateString()}</p>
+
           <Link
             href="https://hispanicgroup.com"
             target="_blank"
