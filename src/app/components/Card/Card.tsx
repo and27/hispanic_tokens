@@ -16,7 +16,7 @@ const Card = async ({ name, task, date, totalTasks }: ICardProps) => {
       <a className={`${styles.card}`} target="_blank" rel="noopener noreferrer">
         <div className={styles.front}>
           <Image
-            src="/back.png"
+            src="/backImage.png"
             className={styles.backgroundImage}
             alt=""
             fill={true}
@@ -29,16 +29,24 @@ const Card = async ({ name, task, date, totalTasks }: ICardProps) => {
             height={120}
             priority
           />
-          <p className={styles.subheading}>Felicitaciones</p>
+          <p className={styles.subheading}>¡Felicitaciones!</p>
           <h2>{name}</h2>
           <p className={styles.descriptionLarge}>{task}</p>
           <p className={styles.description}>
-            LLevas {totalTasks} tareas completadas.
+            Llevas {totalTasks} tareas realizadas.
           </p>
-          <p>Sigue superándote y desafiándote día a día.</p>
+          <p className={styles.footerPhrase}>
+            ¡Continúa desafiándote día a día!.
+          </p>
         </div>
 
         <div className={styles.back}>
+          <Image
+            src="/back2.png"
+            className={styles.backBackgroundImage}
+            alt=""
+            fill={true}
+          />
           <h2>¡Gran trabajo!</h2>
 
           <Image

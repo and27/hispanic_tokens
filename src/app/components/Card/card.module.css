@@ -8,8 +8,35 @@
   }
 
   @media screen and (min-width: 1024px) {
-    width: 30%;
+    width: 35%;
   }
+}
+
+.subheading::after,
+.date::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: calc(100% - 31px);
+  height: calc(100% - 31px);
+  border: 1px solid white;
+  opacity: 0.2;
+  z-index: 1;
+  border-radius: var(--border-radius);
+}
+
+.card .front::after,
+.back::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  border-radius: var(--border-radius);
 }
 
 .card:hover .front {
@@ -27,7 +54,7 @@
 
 .card h2 {
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   font-size: 36px;
   font-family: var(--font-lato);
   color: white;
@@ -42,20 +69,25 @@
 }
 
 .card p {
-  margin: 0;
-  opacity: 0.8;
-  font-size: 1.1rem;
   line-height: 1.5;
-  margin-block-end: 8px;
   color: white;
 }
 
 .descriptionLarge {
-  margin-bottom: 24px !important;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  opacity: 0.8;
 }
 
 .description {
-  margin-bottom: 24px !important;
+  margin-bottom: 24px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.footerPhrase {
+  font-size: 1.2rem;
+  opacity: 1;
 }
 
 .badge {
@@ -82,11 +114,13 @@
 }
 
 .logo {
-  margin-block: 24px;
+  margin-block-end: 24px;
 }
 
 p.subheading {
   margin-block-end: 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .front {
@@ -100,6 +134,7 @@ p.subheading {
     var(--background-start),
     var(--background-end)
   );
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,7 +183,19 @@ p.subheading {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.09;
+  opacity: 0.1;
+
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius);
+  z-index: -1;
+}
+
+.backBackgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.06;
 
   background-position: bottom center;
   background-repeat: no-repeat;
