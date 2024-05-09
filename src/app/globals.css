@@ -6,6 +6,15 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --font-paytone: "Paytone One", sans-serif;
   --font-lato: Lato, sans-serif;
+  --font-great: "Great Vibes", cursive;
+  --font-allison: "Allison", cursive;
+
+  --font-size-small: 10px;
+  --font-size-base: 13px;
+  --font-size-medium: 17px;
+  --font-size-large: 22px;
+  --font-size-xlarge: 29px;
+  --font-size-xxlarge: 37px;
 
   --foreground-rgb: 0, 0, 0;
   --background-start: #6041c4;
