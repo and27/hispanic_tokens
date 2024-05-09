@@ -8,9 +8,10 @@ interface ICardProps {
   task: string;
   date: string;
   totalTasks: number;
+  taskNumber: number;
 }
 
-const Card = async ({ name, task, date, totalTasks }: ICardProps) => {
+const Card = async ({ task, date, totalTasks, taskNumber }: ICardProps) => {
   return (
     <>
       <a className={`${styles.card}`} target="_blank" rel="noopener noreferrer">
@@ -21,23 +22,13 @@ const Card = async ({ name, task, date, totalTasks }: ICardProps) => {
             alt=""
             fill={true}
           />
-          <Image
-            src="/logoN.png"
-            alt="Hispanic Network Community Logo"
-            className={styles.logo}
-            width={120}
-            height={120}
-            priority
-          />
-          <p className={styles.subheading}>¡Felicitaciones!</p>
-          <h2>{name}</h2>
-          <p className={styles.descriptionLarge}>{task}</p>
-          <p className={styles.description}>
-            Llevas {totalTasks} tareas realizadas.
-          </p>
-          <p className={styles.footerPhrase}>
-            ¡Continúa desafiándote día a día!.
-          </p>
+          <p className={styles.taskNumber}>Tarea {taskNumber}</p>
+          <p className={styles.taskName}>{task}</p>
+
+          <div className={styles.footer}>
+            <p>Llevas {totalTasks} tareas realizadas.</p>
+            <p className={styles.date}>{new Date(date).toDateString()}</p>
+          </div>
         </div>
 
         <div className={styles.back}>
@@ -47,7 +38,6 @@ const Card = async ({ name, task, date, totalTasks }: ICardProps) => {
             alt=""
             fill={true}
           />
-          <h2>¡Gran trabajo!</h2>
 
           <Image
             src={gif}
@@ -56,16 +46,9 @@ const Card = async ({ name, task, date, totalTasks }: ICardProps) => {
             alt=""
             style={{ borderRadius: "150px" }}
           />
-          <p className={styles.date}>{new Date(date).toDateString()}</p>
-
-          <Link
-            href="https://hispanicgroup.com"
-            target="_blank"
-            className={styles.description}
-            style={{ color: "white" }}
-          >
-            hispanicgroup.com
-          </Link>
+          <p className={styles.footerPhrase}>
+            ¡Continúa desafiándote día a día!.
+          </p>
         </div>
       </a>
     </>

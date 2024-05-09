@@ -8,7 +8,7 @@
   }
 
   @media screen and (min-width: 1024px) {
-    width: 35%;
+    width: 30%;
   }
 }
 
@@ -16,14 +16,6 @@
 .date::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 15px;
-  width: calc(100% - 31px);
-  height: calc(100% - 31px);
-  border: 1px solid white;
-  opacity: 0.2;
-  z-index: 1;
-  border-radius: var(--border-radius);
 }
 
 .card .front::after,
@@ -52,42 +44,40 @@
   transition: transform 200ms;
 }
 
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 24px;
-  font-size: 36px;
-  font-family: var(--font-lato);
-  color: white;
-}
-
-.card h3 {
-  font-weight: 600;
-  margin-bottom: 18px;
-  font-size: 16px;
-  font-family: var(--font-lato);
-  color: white;
-}
-
 .card p {
   line-height: 1.5;
   color: white;
 }
 
-.descriptionLarge {
-  margin-bottom: 8px;
-  font-size: 1.5rem;
-  opacity: 0.8;
+.taskName {
+  position: relative;
+  font-size: var(--font-size-xlarge);
+  font-weight: 700;
 }
 
-.description {
-  margin-bottom: 24px;
-  font-size: 1rem;
-  opacity: 0.8;
+.taskNumber {
+  font-size: var(--font-size-large);
+  font-weight: 700;
+}
+
+.taskName::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fa7905;
+  z-index: -1;
+  border-radius: var(--border-radius);
 }
 
 .footerPhrase {
-  font-size: 1.2rem;
+  font-size: var(--font-size-medium);
   opacity: 1;
+  margin-block-start: 17px;
+  font-weight: lighter;
+  font-weight: 700;
 }
 
 .badge {
@@ -108,22 +98,12 @@
   clip-path: polygon(100% 0, 98% 50%, 100% 100%, 0 100%, 2% 50%, 0 0);
 }
 
-.badge p {
-  font-size: 14px;
-  margin-block-end: 0;
-}
-
 .logo {
   margin-block-end: 24px;
 }
 
-p.subheading {
-  margin-block-end: 8px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.front {
+.front,
+.main {
   transform: rotateY(0deg) perspective(600px);
   border-radius: var(--border-radius);
   box-shadow: 0px 0px 12px #25408f9d;
@@ -152,6 +132,11 @@ p.subheading {
   }
 }
 
+.footer {
+  font-size: var(--font-size-medium);
+  margin-block-start: 3rem;
+}
+
 .back {
   transform: rotateY(180deg) perspective(600px);
   border-radius: var(--border-radius);
@@ -163,7 +148,7 @@ p.subheading {
     var(--background-end)
   );
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
