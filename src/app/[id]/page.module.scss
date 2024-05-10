@@ -25,6 +25,20 @@ p.subheading {
 h2.subtitle {
   color: white;
   font-size: var(--font-size-xxlarge);
+
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1.5s steps(40, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 $particles: 50;
