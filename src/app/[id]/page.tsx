@@ -22,7 +22,7 @@ export default function Home({ params }: any) {
         <div className={styles.container_inner}>
           <div>
             <Image
-              src="/logoP.png"
+              src="/logoMAE.png"
               alt="Hispanic Network Community Logo"
               className={styles.logo}
               width={160}
