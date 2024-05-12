@@ -4,6 +4,7 @@ import Social from "../components/Social/Social";
 import { getInfo } from "@/lib/getDataEntries";
 import { use } from "react";
 import Image from "next/image";
+import Footer from "../components/Footer/Footer";
 import Banner from "../components/Banner/Banner";
 
 export default function Home({ params }: any) {
@@ -44,6 +45,7 @@ export default function Home({ params }: any) {
           />
         </div>
       </main>
+      <Footer />
     </>
   );
 }

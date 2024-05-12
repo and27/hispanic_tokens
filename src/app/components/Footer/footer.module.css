@@ -1,0 +1,10 @@
+.footer {
+  color: #ddd;
+  text-align: center;
+  padding: 12px;
+  font-size: var(--font-size-base);
+}
+
+.footer a {
+  text-decoration: underline;
+}
