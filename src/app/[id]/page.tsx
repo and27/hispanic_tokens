@@ -4,6 +4,7 @@ import Social from "../components/Social/Social";
 import { getInfo } from "@/lib/getDataEntries";
 import { use } from "react";
 import Image from "next/image";
+import Banner from "../components/Banner/Banner";
 
 export default function Home({ params }: any) {
   const { id } = params;
@@ -18,6 +19,7 @@ export default function Home({ params }: any) {
         <div className={styles.before}></div>
         <div className={styles.after}></div>
       </div>
+      <Banner />
       <main className={styles.main}>
         <div className={styles.container_inner}>
           <div>
@@ -25,8 +27,8 @@ export default function Home({ params }: any) {
               src="/logoMAE.png"
               alt="Hispanic Network Community Logo"
               className={styles.logo}
-              width={160}
-              height={160}
+              width={100}
+              height={100}
               priority
             />
             <p className={styles.subheading}>¡Felicitaciones!</p>

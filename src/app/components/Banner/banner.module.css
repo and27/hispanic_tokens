@@ -1,0 +1,11 @@
+.banner {
+  background-color: #dfdfdf;
+  color: #222;
+  text-align: center;
+  padding: 12px;
+  font-size: var(--font-size-medium);
+}
+
+.banner a {
+  text-decoration: underline;
+}
