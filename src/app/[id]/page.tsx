@@ -33,7 +33,7 @@ export default function Home({ params }: any) {
               priority
             />
             <p className={styles.subheading}>¡Felicitaciones!</p>
-            <h2 className={styles.subtitle}>Carolina Barale</h2>
+            <h2 className={styles.subtitle}>{name}</h2>
           </div>
           <Social />
           <Card
